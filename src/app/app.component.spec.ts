@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '50-missions'`, () => {
+  it(`should have as title '50 missions board game'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('50-missions');
+    expect(app.title).toEqual('50 missions board game');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('50-missions app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('50 missions board game app is running!');
   });
 });
