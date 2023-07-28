@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SlpashComponent } from './slpash.component';
+import { InitComponent } from './init.component';
 
-describe('SlpashComponent', () => {
-  let component: SlpashComponent;
-  let fixture: ComponentFixture<SlpashComponent>;
+describe('InitComponent', () => {
+  let component: InitComponent;
+  let fixture: ComponentFixture<InitComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SlpashComponent]
+      declarations: [InitComponent]
     });
-    fixture = TestBed.createComponent(SlpashComponent);
+    fixture = TestBed.createComponent(InitComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

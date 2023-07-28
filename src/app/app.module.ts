@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SplashModule} from "./modules/splash/splash.module";
+import {LoggerModule} from "ngx-logger";
+import {environment} from "../environments/environment";
+import {InitModule} from "./modules/init/init.module";
 
 @NgModule({
   declarations: [
@@ -12,9 +14,14 @@ import {SplashModule} from "./modules/splash/splash.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SplashModule
+    InitModule,
+    LoggerModule.forRoot({
+      disableConsoleLogging: false,
+      level: environment.LOG_LEVEL
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

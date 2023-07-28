@@ -1,0 +1,55 @@
+.world-map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3200px;
+  height: 2129px;
+  z-index: -1000;
+  background-image: url(../assets/images/world-map.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-animation-duration: 120s;
+  -moz-animation-duration: 120s;
+  -o-animation-duration: 120s;
+  -ms-animation-duration: 120s;
+  animation-duration: 120s;
+  -webkit-animation-name: bg-move;
+  -moz-animation-name: bg-move;
+  -o-animation-name: bg-move;
+  -ms-animation-name: bg-move;
+  animation-name: bg-move;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes bg-move {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-40%, -50%);
+  }
+  50% {
+    transform: translate(-50, -50%);
+  }
+  75% {
+    transform: translate(-60%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
