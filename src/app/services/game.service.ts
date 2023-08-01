@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
-import {Subject} from "rxjs";
+import { Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GameService {
-
   started: boolean = false;
 
-  constructor() { }
+  constructor() {}
 
   startGame() {
     this.started = true;
