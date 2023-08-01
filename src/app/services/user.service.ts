@@ -6,6 +6,4 @@ import { User } from '../models/user.class';
 })
 export class UserService {
   currentUser = new User();
-
-  constructor() {}
 }

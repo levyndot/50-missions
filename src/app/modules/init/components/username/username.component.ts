@@ -3,12 +3,12 @@ import { UserService } from '../../../../services/user.service';
 import { NGXLogger } from 'ngx-logger';
 
 @Component({
-  selector: 'init-username',
+  selector: 'app-init-username',
   templateUrl: './username.component.html',
   styleUrls: ['./username.component.scss'],
 })
 export class UsernameComponent {
-  username: string = '';
+  username = '';
 
   constructor(private _userService: UserService, private _logger: NGXLogger) {}
 
