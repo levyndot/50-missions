@@ -7,9 +7,16 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { PlayersComponent } from './components/players/players.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [UsernameComponent, StartComponent, InitComponent],
+  declarations: [
+    PlayersComponent,
+    UsernameComponent,
+    StartComponent,
+    InitComponent,
+  ],
   imports: [
     CommonModule,
     ButtonModule,
@@ -17,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     RouterOutlet,
     FormsModule,
     RouterLink,
+    FontAwesomeModule,
   ],
 })
 export class InitModule {}

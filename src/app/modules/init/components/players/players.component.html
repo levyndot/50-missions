@@ -1,0 +1,30 @@
+<div class="grid">
+    <div class="col">
+        <div class="text-center p-3 border-round-sm bg-primary-reverse font-bold ">
+            Choisir le nombre de joueurs
+        </div>
+    </div>
+</div>
+<div class="grid">
+    <div class="col">
+        <p-button (onClick)="setNumberOfPlayers(2)">
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+        </p-button>
+    </div>
+    <div class="col">
+        <p-button (onClick)="setNumberOfPlayers(3)">
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+        </p-button>
+    </div>
+    <div class="col">
+        <p-button (onClick)="setNumberOfPlayers(4)">
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+            <fa-icon [icon]="['fas', 'user-large']"></fa-icon>
+        </p-button>&nbsp;
+    </div>
+</div>

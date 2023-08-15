@@ -1,1 +1,2 @@
-<p-button label="Nouvelle partie" [routerLink]="'/init/username'"></p-button>
+<p-button label="Nouvelle partie avec IA" icon="pi pi-play" [routerLink]="'/init/username'" (onClick)="setGameConnectivityMode('offline')"></p-button>&nbsp;
+<p-button label="Nouvelle partie en ligne" icon="pi pi-globe" [routerLink]="'/init/username'" (onClick)="setGameConnectivityMode('online')"></p-button>

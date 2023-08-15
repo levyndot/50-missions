@@ -1,4 +1,4 @@
-import { getGreeting } from '../support/app.po';
+import { getGreeting } from '../support/50m.po';
 
 describe('50-missions', () => {
   beforeEach(() => cy.visit('/'));
@@ -7,7 +7,7 @@ describe('50-missions', () => {
     // Custom command example, see `../support/commands.ts` file
     cy.login('my-email@something.com', 'myPassword');
 
-    // Function helper example, see `../support/app.po.ts` file
+    // Function helper example, see `../support/50m.po.ts` file
     getGreeting().contains('Welcome 50-missions');
   });
 });

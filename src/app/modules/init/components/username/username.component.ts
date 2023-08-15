@@ -3,7 +3,7 @@ import { UserService } from '../../../../services/user.service';
 import { NGXLogger } from 'ngx-logger';
 
 @Component({
-  selector: 'app-init-username',
+  selector: 'fm-init-username',
   templateUrl: './username.component.html',
   styleUrls: ['./username.component.scss'],
 })
@@ -14,6 +14,5 @@ export class UsernameComponent {
 
   updateUsername() {
     this._userService.currentUser.username = this.username;
-    this._logger.info('Username : ' + this.username);
   }
 }

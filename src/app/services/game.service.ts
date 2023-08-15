@@ -1,16 +1,35 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GameService {
-  started = false;
+  public started = new BehaviorSubject(false);
+  private _mode = 'offline';
+  private _numberOfPlayers = 1;
 
   startGame() {
-    this.started = true;
+    this.started.next(true);
   }
 
   finishGame() {
-    this.started = false;
+    this.started.next(false);
+  }
+
+  set mode(mode: string) {
+    this._mode = mode;
+  }
+
+  get mode() {
+    return this._mode;
+  }
+
+  set numberOfPlayers(num: number) {
+    this._numberOfPlayers = num;
+  }
+
+  get numberOfPlayers() {
+    return this._numberOfPlayers;
   }
 }
