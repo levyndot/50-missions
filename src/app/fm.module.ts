@@ -7,7 +7,18 @@ import { LoggerModule } from 'ngx-logger';
 import { GameboardModule } from './modules/gameboard/gameboard.module';
 import { fmRoutes } from './fm.routes';
 import { fmComponent } from './fm.component';
-import { faUserLarge } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserLarge,
+  faBolt,
+  faFireFlameCurved,
+  faDroplet,
+  faWind,
+  faPlus,
+  faMinus,
+  faTimes,
+  faEquals,
+  faGreaterThan,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   FaIconLibrary,
   FontAwesomeModule,
@@ -31,6 +42,17 @@ import {
 })
 export class fmModule {
   constructor(private library: FaIconLibrary) {
-    this.library.addIcons(faUserLarge);
+    this.library.addIcons(
+      faUserLarge,
+      faBolt,
+      faFireFlameCurved,
+      faDroplet,
+      faWind,
+      faPlus,
+      faMinus,
+      faTimes,
+      faEquals,
+      faGreaterThan
+    );
   }
 }

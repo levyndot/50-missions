@@ -1,0 +1,30 @@
+<div class="mission-card shadow-8 verso" *ngIf="!recto">
+</div>
+<div class="mission-card shadow-8 recto" *ngIf="recto">
+<!--  <svg-->
+<!--    viewBox="0 0 100 100"-->
+<!--    xmlns="http://www.w3.org/2000/svg"-->
+<!--    style="font-size: 0.2rem">-->
+<!--    <path-->
+<!--      id="circlePath"-->
+<!--      d="M 5, 50 a 40,40 0 0,0 90,0"-->
+<!--    />-->
+<!--    <text>-->
+<!--      <textPath href="#circlePath" [attr.textLength]="ruleDescription.length * 2">-->
+<!--        {{ ruleDescription }}-->
+<!--      </textPath>-->
+<!--    </text>-->
+<!--  </svg>-->
+  <div class="icon-section">
+    <fa-icon [icon]="['fas', 'bolt']" class="bolt"></fa-icon>
+    <fa-icon [icon]="['fas', 'plus']" class="symbol"></fa-icon>
+    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire"></fa-icon>
+    <fa-icon [icon]="['fas', 'equals']" class="symbol"></fa-icon>
+    <fa-icon [icon]="['fas', 'droplet']" class="water"></fa-icon>
+    <fa-icon [icon]="['fas', 'minus']" class="symbol"></fa-icon>
+    <fa-icon [icon]="['fas', 'wind']" class="wind"></fa-icon>
+  </div>
+  <div class="ruleDesc text-xs">
+    {{ ruleDescription }}
+  </div>
+</div>

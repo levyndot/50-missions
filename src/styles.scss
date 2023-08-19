@@ -4,14 +4,14 @@
 @import './assets/css/primeng-custom.css';
 
 @font-face {
-  font-family: 'Ethereal';
+  font-family: 'Centaur';
   src: local('Ethereal'),
-  url('assets/fonts/Ethereal-Thin.otf') format('opentype');
+  url('assets/fonts/CENTAUR.ttf') format('truetype');
 }
 
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  font-family: 'Ethereal';
+  font-family: 'Centaur', serif;
 }

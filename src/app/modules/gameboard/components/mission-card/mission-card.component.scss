@@ -1,0 +1,54 @@
+.mission-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.recto {
+  background-image: url("../../../../../assets/images/mission-card-recto.jpg");
+}
+
+.verso {
+  background-image: url("../../../../../assets/images/mission-card-verso.svg");
+  background-color: #FFF1C8;
+  background-position: bottom;
+}
+
+.mission-card fa-icon {
+  font-size: 1.5rem;
+  margin: 0 0.1rem;
+}
+
+.mission-card fa-icon.symbol {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  vertical-align: bottom;
+}
+
+.mission-card fa-icon.bolt {
+  color: #dcb33e;
+}
+.mission-card fa-icon.fire {
+  color: #af2424;
+}
+.mission-card fa-icon.water {
+  color: #1044d1;
+}
+.mission-card fa-icon.wind {
+  color: #52ac57;
+}
+
+.mission-card .icon-section {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.ruleDesc {
+  color: #dcb33e;
+  text-align: center;
+  padding: 0.2rem 1rem 0 1rem;
+  font-size: 1.2rem;
+}

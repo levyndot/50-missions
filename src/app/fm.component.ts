@@ -16,9 +16,13 @@ export class fmComponent {
     private _logger: NGXLogger,
     private _gameService: GameService
   ) {
+    console.log(this._router.url);
     this._router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this._logger.debug('Nav ends...', event);
+      }
+      if (this._router.url === '/game') {
+        this.fixBg = true;
       }
     });
     this._gameService.started.subscribe((value) => {
