@@ -15,3 +15,23 @@ body {
   padding: 0;
   font-family: 'Centaur', serif;
 }
+
+:root {
+  --bolt-color: #dcb33e;
+  --fire-color: #af2424;
+  --water-color: #1044d1;
+  --wind-color: #52ac57;
+}
+
+.bolt {
+  color: var(--bolt-color);
+}
+.fire {
+  color: var(--fire-color);
+}
+.water {
+  color: var(--water-color);
+}
+.wind {
+  color: var(--wind-color);
+}

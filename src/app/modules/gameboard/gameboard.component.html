@@ -1,16 +1,57 @@
 <div class="card h-screen w-screen border-2">
-  <div class="flex card-container overflow-hidden">
-    <div class="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3">Score</div>
-    <div class="flex-grow-1 flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3">
-      <div class="grid">
-        <div class="col"><fm-mission-card [recto]="true" [ruleDescription]="'La somme des éclairs et flammes est égale à la différence des gouttes et vent'"></fm-mission-card></div>
-        <div class="col"><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'"></fm-mission-card></div>
-        <div class="col"><fm-mission-card [recto]="true" [ruleDescription]="'Test encore un peu plus long que le plus court'"></fm-mission-card></div>
-        <div class="col"><fm-mission-card [recto]="true" [ruleDescription]="'Et celui c\'est encore plus long que celui un peu plus long'"></fm-mission-card></div>
+    <div class="flex">
+      <div class="flex-auto flex font-bold text-white m-2 px-5 py-3 border-round">
+        <div class="flex-none flex justify-content-center font-bold text-white m-2 px-5 py-3 h-full">
+          <p-card [style]="{ width: '25rem' }" class="h-full">
+            <div class="p-card-header">
+              <img alt="50 MISSIONS" src="../../../assets/images/title.svg" />
+            </div>
+            <div class="p-card-title">
+              Goud luck {{ playerName }}!
+            </div>
+            <p>
+              Remain missions: {{ remainMissions }}
+            </p>
+            <ng-template pTemplate="footer">
+              <p-button label="Save" icon="pi pi-check"></p-button>
+            </ng-template>
+          </p-card>
+        </div>
+        <div class="flex-grow-1 flex justify-content-center font-bold text-white m-2 px-5 py-3">
+          <div class="grid">
+            <div class="col-12">
+              <div class="grid">
+                <div class="col "><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'" class="align-items-center justify-content-center"></fm-mission-card></div>
+                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'"></fm-mission-card></div>
+                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test encore un peu plus long que le plus court'"></fm-mission-card></div>
+                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Et celui c\'est encore plus long que celui un peu plus long'"></fm-mission-card></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="grid">
+                <div class="col"><fm-player-card [symbol]="'water'" [number]="4"></fm-player-card></div>
+                <div class="col"><fm-player-card [symbol]="'fire'" [number]="7"></fm-player-card></div>
+                <div class="col"><fm-player-card [symbol]="'wind'" [number]="3"></fm-player-card></div>
+                <div class="col"><fm-player-card [symbol]="'bolt'" [number]="1"></fm-player-card></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-none flex justify-content-center font-bold text-white m-2 px-5 py-3">
+          <div class="col">
+            <div class="grid">
+              <div class="col-12">
+                <fm-mission-card></fm-mission-card>
+              </div>
+              <div class="col-12">
+                <fm-player-card [verso]="true"></fm-player-card>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="flex-none flex align-items-end justify-content-center font-bold text-white m-2 px-5 py-3">
-      <div class="col"><fm-mission-card></fm-mission-card></div>
+    <div class="flex">
+      <div class="flex-auto flex align-items-center justify-content-center bg-red-800 opacity-70 font-bold text-white m-2 px-5 py-3 border-round">Players cards</div>
     </div>
-  </div>
 </div>

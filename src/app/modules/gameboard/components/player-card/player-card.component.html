@@ -1,0 +1,41 @@
+<div class="player-card shadow-8" [ngClass]="symbol" *ngIf="!verso">
+  <div class="inline">
+    <span class="card-number">
+      {{ number }}
+    </span>
+    <fa-icon [icon]="['fas', 'bolt']" class="bolt text-sm" *ngIf="symbol ==='bolt'"></fa-icon>
+    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire text-sm" *ngIf="symbol ==='fire'"></fa-icon>
+    <fa-icon [icon]="['fas', 'droplet']" class="water text-sm" *ngIf="symbol ==='water'"></fa-icon>
+    <fa-icon [icon]="['fas', 'wind']" class="wind text-sm" *ngIf="symbol ==='wind'"></fa-icon>
+    <div class="card-lines outer">
+      <div class="card-lines inner"></div>
+    </div>
+    <div class="card-lines outer-h">
+      <div class="card-lines inner"></div>
+    </div>
+  </div>
+  <div class="main-card-symbol text-center">
+    <fa-icon [icon]="['fas', 'bolt']" class="bolt" *ngIf="symbol ==='bolt'"></fa-icon>
+    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire" *ngIf="symbol ==='fire'"></fa-icon>
+    <fa-icon [icon]="['fas', 'droplet']" class="water" *ngIf="symbol ==='water'"></fa-icon>
+    <fa-icon [icon]="['fas', 'wind']" class="wind" *ngIf="symbol ==='wind'"></fa-icon>
+  </div>
+  <div class="inline card-number-bottom">
+    <span class="card-number">
+      {{ number }}
+    </span>
+    <fa-icon [icon]="['fas', 'bolt']" class="bolt text-sm" *ngIf="symbol ==='bolt'"></fa-icon>
+    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire text-sm" *ngIf="symbol ==='fire'"></fa-icon>
+    <fa-icon [icon]="['fas', 'droplet']" class="water text-sm" *ngIf="symbol ==='water'"></fa-icon>
+    <fa-icon [icon]="['fas', 'wind']" class="wind text-sm" *ngIf="symbol ==='wind'"></fa-icon>
+    <div class="card-lines outer bottom">
+      <div class="card-lines inner"></div>
+    </div>
+    <div class="card-lines outer-h bottom">
+      <div class="card-lines inner"></div>
+    </div>
+  </div>
+</div>
+<div class="player-card shadow-8 verso" *ngIf="verso">
+  verso
+</div>

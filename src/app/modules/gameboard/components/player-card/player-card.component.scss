@@ -1,0 +1,93 @@
+.player-card {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+  border-radius: 5px;
+  font-size: 3rem;
+  padding: 1rem;
+  height: 15rem;
+  width: 10rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player-card.verso {
+  color: #000;
+}
+
+.card-number+fa-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 4rem;
+}
+
+.card-number-bottom {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  transform: rotate(-180deg);
+}
+.card-number-bottom .card-number+fa-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 3rem;
+}
+
+.card-lines.outer {
+  position: absolute;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  height: 35px;
+  width: 6px;
+  left: 1.5rem;
+  top: 5.25rem;
+}
+
+.card-lines.outer-h {
+  position: absolute;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  height: 35px;
+  width: 6px;
+  left: 3.5rem;
+  top: 1rem;
+  transform: rotate(-90deg);
+}
+
+
+
+.card-lines.outer.bottom {
+  left: 0.5rem;
+  top: 4.25rem;
+}
+
+.card-lines.outer-h.bottom {
+  left: 2.5rem;
+  top: 0;
+}
+
+.card-lines.inner {
+  position: absolute;
+  border-left: 1px solid;
+  height: 60px;
+  width: 1px;
+  left: 2px;
+}
+
+.main-card-symbol {
+  top: 2rem;
+  position: relative;
+}
+
+.bolt .card-lines {
+  border-color: var(--bolt-color);
+}
+.water .card-lines {
+  border-color: var(--water-color);
+}
+.fire .card-lines {
+  border-color: var(--fire-color);
+}
+.wind .card-lines {
+  border-color: var(--wind-color);
+}
