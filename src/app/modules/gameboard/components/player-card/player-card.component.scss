@@ -12,7 +12,9 @@
 }
 
 .player-card.verso {
-  color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../../../assets/images/player-card-verso.svg");
 }
 
 .card-number+fa-icon {
