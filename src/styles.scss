@@ -35,3 +35,24 @@ body {
 .wind {
   color: var(--wind-color);
 }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 0.35em;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 0.45em;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 0.55em;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 0.85em;
+  }
+}
