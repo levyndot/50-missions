@@ -16,15 +16,16 @@
 <!--    </text>-->
 <!--  </svg>-->
   <div class="icon-section">
-    <fa-icon [icon]="['fas', 'bolt']" class="bolt"></fa-icon>
-    <fa-icon [icon]="['fas', 'plus']" class="symbol"></fa-icon>
-    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire"></fa-icon>
-    <fa-icon [icon]="['fas', 'equals']" class="symbol"></fa-icon>
-    <fa-icon [icon]="['fas', 'droplet']" class="water"></fa-icon>
-    <fa-icon [icon]="['fas', 'minus']" class="symbol"></fa-icon>
-    <fa-icon [icon]="['fas', 'wind']" class="wind"></fa-icon>
+<!--    <fa-icon [icon]="['fas', 'bolt']" class="bolt"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'plus']" class="symbol"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'fire-flame-curved']" class="fire"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'equals']" class="symbol"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'droplet']" class="water"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'minus']" class="symbol"></fa-icon>-->
+<!--    <fa-icon [icon]="['fas', 'wind']" class="wind"></fa-icon>-->
+    <span *ngFor="let elem of mission?.html">{{elem}}&nbsp;</span>
   </div>
   <div class="rule-desc text-xs">
-    {{ ruleDescription }}
+    {{ mission?.description }}
   </div>
 </div>

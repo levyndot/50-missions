@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import {Mission} from "../../../../models/missions/mission.interface";
 
 @Component({
   selector: 'fm-mission-card',
@@ -7,5 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class MissionCardComponent {
   @Input() recto: boolean = false;
-  @Input() ruleDescription: string = '';
+  @Input() mission: Mission|undefined;
+
+  constructor() {
+  }
 }

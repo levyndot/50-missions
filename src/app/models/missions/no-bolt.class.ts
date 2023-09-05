@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
 export class NoBolt extends Mission {
@@ -6,7 +6,7 @@ export class NoBolt extends Mission {
     super(
       MissionType.Common,
       "Il n'y a aucune carte éclair",
-      new MissionView(['no-bolt'])
+      [ 'no-bolt' ]
     );
   }
 

@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card } from '../card.class';
 
 export class Exact2DiffValues extends Mission {
@@ -6,7 +6,7 @@ export class Exact2DiffValues extends Mission {
     super(
       MissionType.Common,
       'Il y a exactement 2 valeurs présentes (ex: 5 1 1 5)',
-      new MissionView(['card-2', 'card-6', 'card-6', 'card-6'])
+      [ 'card-2', 'card-6', 'card-6', 'card-6' ]
     );
   }
 

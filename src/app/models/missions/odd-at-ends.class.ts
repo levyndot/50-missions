@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card } from '../card.class';
 
 export class OddAtEnds extends Mission {
@@ -6,7 +6,7 @@ export class OddAtEnds extends Mission {
     super(
       MissionType.Common,
       'Exactement 2 cartes sont impaires et sont séparées par 2 cartes',
-      new MissionView([
+      [
         'card-odd',
         'link',
         'empty-card',
@@ -14,7 +14,7 @@ export class OddAtEnds extends Mission {
         'empty-card',
         'link',
         'empty-odd',
-      ])
+      ]
     );
   }
 

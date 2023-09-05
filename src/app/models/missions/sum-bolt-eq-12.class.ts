@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
 export class SumBoltEq12 extends Mission {
@@ -6,7 +6,7 @@ export class SumBoltEq12 extends Mission {
     super(
       MissionType.Common,
       'La somme des éclairs et des feux est égale a 12 (au moins une carte de chaque)',
-      new MissionView(['bolt', '+', 'fire', '=', '12'])
+      [ 'bolt', '+', 'fire', '=', '12' ]
     );
   }
 

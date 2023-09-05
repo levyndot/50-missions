@@ -20,7 +20,6 @@ export class PlayersComponent {
   setNumberOfPlayers(num: number) {
     this._gameService.numberOfPlayers = num;
     this._router.navigate(['game']).then(() => {
-      this._gameService.started.next(true);
       this._logger.debug('Selected ' + num + ' players.');
     });
   }

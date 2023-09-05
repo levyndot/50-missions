@@ -21,10 +21,10 @@
           <div class="grid">
             <div class="col-12">
               <div class="grid">
-                <div class="col "><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'" class="align-items-center justify-content-center"></fm-mission-card></div>
-                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'"></fm-mission-card></div>
-                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test encore un peu plus long que le plus court'"></fm-mission-card></div>
-                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Et celui là c\'est encore plus long que celui un peu plus long'"></fm-mission-card></div>
+                <div class="col align-items-center justify-content-center" *ngFor="let mission of getCurrentMissions()"><fm-mission-card [recto]="true" [mission]="mission" class="align-items-center justify-content-center"></fm-mission-card></div>
+<!--                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test un poil court'"></fm-mission-card></div>-->
+<!--                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Test encore un peu plus long que le plus court'"></fm-mission-card></div>-->
+<!--                <div class="col align-items-center justify-content-center"><fm-mission-card [recto]="true" [ruleDescription]="'Et celui là c\'est encore plus long que celui un peu plus long'"></fm-mission-card></div>-->
               </div>
             </div>
             <div class="col-12">

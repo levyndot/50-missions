@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
 export class NoWater extends Mission {
@@ -6,7 +6,7 @@ export class NoWater extends Mission {
     super(
       MissionType.Common,
       "Il n'y a pas de carte Eau",
-      new MissionView(['no-water'])
+      [ 'no-water' ]
     );
   }
 

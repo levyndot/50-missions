@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card } from '../card.class';
 
 export class Sum3CardSbsEq7 extends Mission {
@@ -6,7 +6,7 @@ export class Sum3CardSbsEq7 extends Mission {
     super(
       MissionType.Common,
       'La somme de 3 cartes qui se touchent est égale à 7',
-      new MissionView(['3-cards-sbs', '=', '7'])
+      [ '3-cards-sbs', '=', '7' ]
     );
   }
 

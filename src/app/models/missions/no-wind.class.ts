@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
 export class NoWind extends Mission {
@@ -6,7 +6,7 @@ export class NoWind extends Mission {
     super(
       MissionType.Common,
       "Il n'y a aucune carte vent",
-      new MissionView(['no-wind'])
+      [ 'no-wind' ]
     );
   }
 

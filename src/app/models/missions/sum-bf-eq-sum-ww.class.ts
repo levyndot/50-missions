@@ -1,4 +1,4 @@
-import { Mission, MissionType, MissionView } from '../mission.interface';
+import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
 export class SumBFEqSumWWClass extends Mission {
@@ -6,7 +6,7 @@ export class SumBFEqSumWWClass extends Mission {
     super(
       MissionType.Common,
       "La somme des éclairs et du feux est égale à celle de l'eau et du vent (ex: 3 + 4 = 7 + 0)",
-      new MissionView(['bolt', '+', 'fire', '=', 'water', '+', 'wind'])
+      [ 'bolt', '+', 'fire', '=', 'water', '+', 'wind' ]
     );
   }
 
