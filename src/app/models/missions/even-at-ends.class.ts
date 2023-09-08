@@ -1,7 +1,7 @@
 import { Mission, MissionType } from './mission.interface';
 import { Card } from '../card.class';
 
-export class OddAtEnds extends Mission {
+export class EvenAtEnds extends Mission {
   constructor() {
     super(
       MissionType.Common,
@@ -19,6 +19,6 @@ export class OddAtEnds extends Mission {
   }
 
   validate(card1: Card, card2: Card, card3: Card, card4: Card): boolean {
-    return card1.value % 2 !== 0 && card2.value % 2 === 0 && card3.value % 2 === 0 && card4.value % 2 !== 0;
+    return card1.value % 2 === 0 && card2.value % 2 !== 0 && card3.value % 2 !== 0 && card4.value % 2 === 0;
   }
 }
