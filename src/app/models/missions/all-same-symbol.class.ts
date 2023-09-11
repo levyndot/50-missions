@@ -12,10 +12,9 @@ export class AllSameSymbol extends Mission {
 
   validate(card1: Card, card2: Card, card3: Card, card4: Card): boolean {
     return (
-      card1.symbol !== CardSymbol.wind &&
-      card2.symbol !== CardSymbol.wind &&
-      card3.symbol !== CardSymbol.wind &&
-      card4.symbol !== CardSymbol.wind
+      card1.symbol === card2.symbol &&
+      card2.symbol === card3.symbol &&
+      card3.symbol === card4.symbol
     );
   }
 }

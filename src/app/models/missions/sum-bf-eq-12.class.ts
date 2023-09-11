@@ -1,7 +1,7 @@
 import { Mission, MissionType } from './mission.interface';
 import { Card, CardSymbol } from '../card.class';
 
-export class SumBoltEq12 extends Mission {
+export class SumBFEq12 extends Mission {
   constructor() {
     super(
       MissionType.Common,

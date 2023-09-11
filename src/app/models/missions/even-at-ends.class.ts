@@ -5,7 +5,7 @@ export class EvenAtEnds extends Mission {
   constructor() {
     super(
       MissionType.Common,
-      'Exactement 2 cartes sont impaires et sont séparées par 2 cartes',
+      'Exactement 2 cartes sont paires et sont séparées par 2 cartes',
       [
         'card-odd',
         'link',
