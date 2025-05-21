@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "ng serve --port=8080",
     "build": "nx run-many -t build test lint",
     "test": "nx test",
     "lint": "nx lint"
